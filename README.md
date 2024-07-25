@@ -6,5 +6,5 @@ Network Intrusion Detection Systems (NIDS) are crucial for monitoring and securi
 This project aims to develop an advanced Intrusion Detection System (IDS) using machine learning techniques to analyze network traffic and identify potential threats. The following steps were undertaken to achieve this goal:
 
 ### 1. Exploratory Data Analysis (EDA):
- --> Conducted thorough EDA to understand the distribution and relationships within the UNSW-NB15 dataset.
-  --> Visualized various features to identify patterns and anomalies.
+i) Conducted thorough EDA to understand the distribution and relationships within the UNSW-NB15 dataset.                                     
+ii) Visualized various features to identify patterns and anomalies.
