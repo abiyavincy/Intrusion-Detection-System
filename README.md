@@ -18,7 +18,7 @@ This project aims to develop an advanced Intrusion Detection System (IDS) using 
   ii) Used Random Search and Grid Search CV for hyperparameter tuning to optimize model performance.
 
 ### 4. Pipeline Creation:
-  i) Developed a custom scikit-learn pipeline to streamline the prediction process for test data.
+  i) Developed a custom scikit-learn pipeline to streamline the prediction process for test data.                                                            
   ii) Ensured efficient data processing and model application in a seamless workflow.
 
 ### 5. Deployment:
