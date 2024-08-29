@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrusion Detection System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('/static/background.png'); /* Updated to use your local image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: white;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>INTRUSION DETECTION SYSTEM</h1>
+    <h3>Please Enter the Inputs to Make Predictions</h3>
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="dpkts">dpkts:</label>
+        <input type="number" name="dpkts" id="dpkts" required>
+
+        <label for="sttl">sttl:</label>
+        <input type="number" name="sttl" id="sttl" required>
+
+        <label for="smean">smean:</label>
+        <input type="number" name="smean" id="smean" required>
+
+        <label for="ct_srv_src">ct_srv_src:</label>
+        <input type="number" name="ct_srv_src" id="ct_srv_src" required>
+
+        <label for="proto">proto:</label>
+        <input type="text" name="proto" id="proto" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
