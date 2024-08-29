@@ -14,7 +14,7 @@ This project aims to develop an advanced Intrusion Detection System (IDS) using 
   ii) Applied techniques such as target smoothing and encoding for categorical variables.
 
 ### 3. Model Building and Tuning:
-  i) Built and trained models using algorithms like Random Forest, XGBoost, and Decision Trees.                                                         
+  i) Built and tuned Random Forest, XGBoost, and CatBoost models for optimal performance and then combined them using a Voting Classifier to enhance overall prediction accuracy.                                                        
   ii) Used Random Search and Grid Search CV for hyperparameter tuning to optimize model performance.
 
 ### 4. Pipeline Creation:
